@@ -1,0 +1,27 @@
+{
+  "name": "phoenix",
+  "version": "1.0.0",
+  "description": "Web proxy using Scramjet, Ultraviolet, and Rammerhead (Similar to InvisiProxy) with site data saving (hopefully)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnonymousBirb5100/phoenix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AnonymousBirb5100/phoenix/issues"
+  },
+  "homepage": "https://github.com/AnonymousBirb5100/phoenix#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "better-sqlite3": "^12.11.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

@@ -1,0 +1,22 @@
+curl -X POST http://localhost:3000/api/register \
+  -H "Content-Type: application/json" \
+  -d @req.json
+
+curl -X POST http://localhost:3000/api/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"alice","password":"hello123"}'
+
+curl -X DELETE http://localhost:3000/api/account \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"password":"hello123"}'
+
+# Save Rammerhead session (Rammerhead session saving testing)
+curl -X POST http://localhost:3000/api/sessions/rammerhead \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"sessionId":"test-session-abc123"}'
+
+# Retrieve it
+curl http://localhost:3000/api/sessions/rammerhead \
+  -H "Authorization: Bearer YOUR_TOKEN"

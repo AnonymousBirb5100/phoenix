@@ -1,0 +1,17 @@
+-- See all your tables
+.tables
+
+-- See every user
+SELECT * FROM users;
+
+-- See just usernames and emails (cleaner)
+SELECT id, username, email, created_at FROM users;
+
+-- See all proxy sessions
+SELECT * FROM proxy_sessions;
+
+-- Count how many users you have
+SELECT COUNT(*) FROM users;
+
+-- Exit
+.quit

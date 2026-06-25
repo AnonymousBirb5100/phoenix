@@ -1,0 +1,7 @@
+server.js: handles all reqs from the browser (what to do with each one)
+auth.js: handles registers & logins between phoenix.db and the terminal (basically find & add data)
+db.js: creates phoenix.db
+package.json: tells node what extra stuff (packages) to install when a user runs 'npm install'
+package-lock.json: tells node what version of packages to install when a user runs 'npm install'
+.gitignore: stops Github from uploading the 300MB 'node-modules' to the github repository, because users can easily put it back with 'npm install'
+sessions.js: puts a received session id (or other proxy save data) in phoenix.db with corresponding engine (uv, rammer, scramjet)
